@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6E584664-478A-408A-A64C-4CB839BFDB26}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Rent_a_Car_Service</RootNamespace>
+    <AssemblyName>Rent_a_Car_Service</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Driver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Driver.Designer.cs">
+      <DependentUpon>Driver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hire other charges.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hire other charges.Designer.cs">
+      <DependentUpon>Hire other charges.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hire package.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hire package.Designer.cs">
+      <DependentUpon>Hire package.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hire payment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hire payment.Designer.cs">
+      <DependentUpon>Hire payment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hire.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hire.Designer.cs">
+      <DependentUpon>Hire.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="My common class\Common_code.cs" />
+    <Compile Include="My Rent a Car System\Common_class.cs" />
+    <Compile Include="My Rent a Car System\Customer_class.cs" />
+    <Compile Include="My Rent a Car System\Driver_class.cs" />
+    <Compile Include="My Rent a Car System\hirePayment_class.cs" />
+    <Compile Include="My Rent a Car System\hire_class.cs" />
+    <Compile Include="My Rent a Car System\Hire_other_charges_class.cs" />
+    <Compile Include="My Rent a Car System\Hire_package_calss.cs" />
+    <Compile Include="My Rent a Car System\login_class.cs" />
+    <Compile Include="My Rent a Car System\rate_class.cs" />
+    <Compile Include="My Rent a Car System\rentPayment_class.cs" />
+    <Compile Include="My Rent a Car System\rentType_class.cs" />
+    <Compile Include="My Rent a Car System\rent_class.cs" />
+    <Compile Include="My Rent a Car System\tourType_class.cs" />
+    <Compile Include="My Rent a Car System\vehicleService_class.cs" />
+    <Compile Include="My Rent a Car System\vehicleType_class.cs" />
+    <Compile Include="My Rent a Car System\Vehicle_class.cs" />
+    <Compile Include="New_account.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="New_account.Designer.cs">
+      <DependentUpon>New_account.cs</DependentUpon>
+    </Compile>
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rate.Designer.cs">
+      <DependentUpon>Rate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rent payment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rent payment.Designer.cs">
+      <DependentUpon>Rent payment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rent type.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rent type.Designer.cs">
+      <DependentUpon>Rent type.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rent.Designer.cs">
+      <DependentUpon>Rent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tour type.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tour type.Designer.cs">
+      <DependentUpon>Tour type.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vehicle service details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vehicle service details.Designer.cs">
+      <DependentUpon>Vehicle service details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vehicle Type.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vehicle Type.Designer.cs">
+      <DependentUpon>Vehicle Type.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vehicle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vehicle.Designer.cs">
+      <DependentUpon>Vehicle.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Driver.resx">
+      <DependentUpon>Driver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hire other charges.resx">
+      <DependentUpon>Hire other charges.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hire package.resx">
+      <DependentUpon>Hire package.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hire payment.resx">
+      <DependentUpon>Hire payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hire.resx">
+      <DependentUpon>Hire.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New_account.resx">
+      <DependentUpon>New_account.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Rate.resx">
+      <DependentUpon>Rate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rent payment.resx">
+      <DependentUpon>Rent payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rent type.resx">
+      <DependentUpon>Rent type.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rent.resx">
+      <DependentUpon>Rent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tour type.resx">
+      <DependentUpon>Tour type.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vehicle service details.resx">
+      <DependentUpon>Vehicle service details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vehicle Type.resx">
+      <DependentUpon>Vehicle Type.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vehicle.resx">
+      <DependentUpon>Vehicle.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="bin\Debug\Rent_a_Car_Service.exe.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\Rent_a_Car_Service.exe" />
+    <Content Include="bin\Debug\Rent_a_Car_Service.pdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
