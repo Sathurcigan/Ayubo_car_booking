@@ -38,14 +38,14 @@ namespace Rent_a_Car_Service.My_Rent_a_Car_System
 
         public void save_fun() 
         {
-            string sql = "insert into Hire_payment(H_id_fk,Cus_id_fk,Hp_basicCharge,Hp_date,dri_id_fk,Hp_stRead,Hp_enRead,Hp_noOfReading,Hp_otherChareges) values ('"+this.hire_id+"','" + this.cusName + "','" + this.basAmount + "','" + this.date + "','" + this.drivreName + "','" + this.st_raed + "','" + this.en_read + "','" + this.read_count + "','" + this.hireOther + "')";
+            string sql = "insert into Hire_payment(H_id_fk,Cus_id_fk,Hp_basicCharge,Hp_date,dri_id_fk,Hp_stRead,Hp_enRead,Hp_noOfReading,Hp_otherChareges) values ('"+this.hire_id.SelectedValue+"','" + this.cusName.SelectedValue + "','" + this.basAmount + "','" + this.date + "','" + this.drivreName.SelectedValue + "','" + this.st_raed + "','" + this.en_read + "','" + this.read_count + "','" + this.hireOther + "')";
             Common_code.common_fun(sql,Common_code.fun_type.Insert);
             view_fun();
         }
 
         public void update_fun()
         {
-            string sql = "update Hire_payment set H_id_fk = '"+this.hire_id+"' ,Cus_id_fk = '" + this.cusName + "',Hp_basicCharge = '" + this.basAmount + "',Hp_date = '" + this.date + "',dri_id_fk = '" + this.drivreName + "',Hp_stRead = '" + this.st_raed + "',Hp_enRead = '" + this.en_read + "',Hp_noOfReading = '" + this.read_count + "', Hp_otherChareges = '" + this.hireOther + "' where Hp_id = '" + this.id + "'";
+            string sql = "update Hire_payment set H_id_fk = '"+this.hire_id.SelectedValue +"' ,Cus_id_fk = '" + this.cusName.SelectedValue + "',Hp_basicCharge = '" + this.basAmount + "',Hp_date = '" + this.date + "',dri_id_fk = '" + this.drivreName.SelectedValue + "',Hp_stRead = '" + this.st_raed + "',Hp_enRead = '" + this.en_read + "',Hp_noOfReading = '" + this.read_count + "', Hp_otherChareges = '" + this.hireOther + "' where Hp_id = '" + this.id + "'";
             Common_code.common_fun(sql, Common_code.fun_type.Update);
             view_fun();
         }

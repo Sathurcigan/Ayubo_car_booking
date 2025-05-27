@@ -89,6 +89,8 @@ namespace Rent_a_Car_Service
             double totalPayment = baseCharge + driverPayment;
 
             totalChargeBox.Text = totalPayment.ToString();
+            bas_amountBox.Text = baseCharge.ToString();
+            driver_chargeBox.Text = driverPayment.ToString();
         }
 
         private void saveBtn_Click(object sender, EventArgs e)
@@ -102,13 +104,13 @@ namespace Rent_a_Car_Service
             if (index > -1)
             {
                 idText.Text = loadTable.Rows[index].Cells[0].Value.ToString();
-                rent_idBox.SelectedValue = loadTable.Rows[index].Cells[3].Value.ToString();
-                bas_amountBox.Text = loadTable.Rows[index].Cells[5].Value.ToString();
-                pay_typeBox.SelectedValue = loadTable.Rows[index].Cells[6].Value.ToString();
+                dateBox.Text = loadTable.Rows[index].Cells[3].Value.ToString();
+                pay_typeBox.Text = loadTable.Rows[index].Cells[5].Value.ToString();
+                bas_amountBox.Text = loadTable.Rows[index].Cells[4].Value.ToString();
                 driver_chargeBox.Text = loadTable.Rows[index].Cells[1].Value.ToString();
-                totalChargeBox.Text = loadTable.Rows[index].Cells[7].Value.ToString();
+                totalChargeBox.Text = loadTable.Rows[index].Cells[6].Value.ToString();
                 cusNameBox.SelectedValue = loadTable.Rows[index].Cells[2].Value.ToString();
-                dateBox.Text = loadTable.Rows[index].Cells[4].Value.ToString();
+                noOf_dayBox.Text = " - ";
             }
         }
 
